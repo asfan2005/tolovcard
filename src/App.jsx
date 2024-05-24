@@ -3,6 +3,7 @@ import Payme from "./img/payme.svg";
 import Click from "./img/click.svg";
 import Uzum from "./img/uzum.svg";
 import { X } from "react-bootstrap-icons";
+
 function App() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [activeButton, setActiveButton] = useState(null);
@@ -36,7 +37,7 @@ function App() {
             className="border border-image-source: linear-gradient(153.46deg, rgba(255, 255, 255, 0) 16.52%, rgba(255, 255, 255, 0.5) 36.53%, rgba(255, 255, 255, 0.5) 63.47%, rgba(255, 255, 255, 0) 83.21%); rounded-lg p-6"
             style={{
               width: "598px",
-              height: "455px",
+              height: "435px",
               borderRadius: "25px",
               position: "relative",
               backgroundColor: "rgba(33, 21, 45, 1)",
@@ -44,7 +45,11 @@ function App() {
             }}
           >
             <h5
-              style={{ fontFamily: "Montserrat", fontSize: "19px" }}
+              style={{
+                fontFamily: "sans-serif",
+                fontSize: "18px",
+                color: "rgba(255, 255, 255, 1)",
+              }}
               className="font-bold mb-4 my-4"
             >
               To'lov qilish
@@ -54,11 +59,16 @@ function App() {
               style={{
                 background: "rgba(255, 255, 255, 0.05)",
                 border: "1px solid rgba(255, 255, 255, 0.2)",
+                height:"190px"
               }}
             >
               <h5
-                style={{ fontFamily: "Montserrat", fontSize: "19px" }}
-                className="font-bold mb-4 my-4"
+                style={{
+                  fontFamily: "sans-serif",
+                  fontSize: "18px",
+                  color: "rgba(255, 255, 255, 1)",
+                }}
+                className="font-bold mb-4"
               >
                 To'lov tizimini tanlang
               </h5>
@@ -79,7 +89,11 @@ function App() {
                     <img src={Payme} alt="Payme" />
                   </button>
                   <p
-                    style={{ fontFamily: "Montserrat", fontSize: "19px" }}
+                    style={{
+                      fontFamily: "sans-serif",
+                      fontSize: "18px",
+                      color: "rgba(255, 255, 255, 1)",
+                    }}
                     className="text-center my-1"
                   >
                     Payme
@@ -97,7 +111,11 @@ function App() {
                     <img src={Uzum} alt="Uzum" />
                   </button>
                   <p
-                    style={{ fontFamily: "Montserrat", fontSize: "19px" }}
+                    style={{
+                      fontFamily: "sans-serif",
+                      fontSize: "18px",
+                      color: "rgba(255, 255, 255, 1)",
+                    }}
                     className="text-center my-1"
                   >
                     Uzum
@@ -115,7 +133,11 @@ function App() {
                     <img src={Click} alt="Click" />
                   </button>
                   <p
-                    style={{ fontFamily: "Montserrat", fontSize: "19px" }}
+                    style={{
+                      fontFamily: "sans-serif",
+                      fontSize: "18px",
+                      color: "rgba(255, 255, 255, 1)",
+                    }}
                     className="text-center my-1"
                   >
                     Click
@@ -124,16 +146,32 @@ function App() {
               </div>
             </div>
             <div className="flex justify-between mt-4">
-              <p style={{ fontFamily: "Montserrat", fontSize: "19px" }}>
+              <p
+                style={{
+                  fontFamily: "sans-serif",
+                  fontSize: "18px",
+                  color: "rgba(255, 255, 255, 1)",
+                }}
+              >
                 To'lanadigan summa
               </p>
-              <h4 style={{ fontFamily: "Montserrat", fontSize: "19px" }}>
+              <h4
+                style={{
+                  fontFamily: "sans-serif",
+                  fontSize: "18px",
+                  color: "rgba(255, 255, 255, 1)",
+                }}
+              >
                 4 000 000 UZS
               </h4>
             </div>
 
             <button
-              style={{ fontFamily: "Montserrat", fontSize: "19px" }}
+              style={{
+                fontFamily: "sans-serif",
+                fontSize: "18px",
+                color: "rgba(255, 255, 255, 1)",
+              }}
               className="text-center w-100 bg-blue-500 text-white py-2 px-4 rounded my-3"
             >
               To’lov 150 000 UZS
